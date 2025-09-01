@@ -1,0 +1,56 @@
+
+/* Классический бизнес стиль */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #198754;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #0b5ed7);
+    border: none;
+    padding: 12px 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+                
+
+/* Простая навигация */
+.navbar-brand { font-size: 1.5rem; }
+
+/* Основной Hero */
+.min-vh-50 { min-height: 50vh; }
+
+/* О нас с командой */
+.about-image-placeholder { border: 2px dashed #dee2e6; }
+
+/* Контакты с картой */
+.map-placeholder { border: 2px dashed #dee2e6; }
+
+/* Простой подвал */
+.social-links a:hover { color: #007bff !important; }
+
+/* Отзывы клиентов */
+.testimonial-card { transition: transform 0.3s ease; } .testimonial-card:hover { transform: translateY(-5px); }
+
+/* Галерея проектов */
+.portfolio-item { transition: transform 0.3s ease; } .portfolio-item:hover { transform: translateY(-5px); }
+
+/* Статистика компании */
+.stats-icon { opacity: 0.8; }

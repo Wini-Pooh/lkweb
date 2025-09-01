@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предпросмотр сайта</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+/* Классический черно-белый стиль */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #666666;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.navbar {
+    background-color: var(--bg-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: white;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card {
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.card:hover {
+    border-color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.bg-light {
+    background-color: var(--light-gray) !important;
+    color: var(--text-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-gray) !important;
+    color: white !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-dark {
+    color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white !important;
+}
+                
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white centered-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="fas fa-building me-2"></i>Агентство
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav4">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Команда</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="hero-form-section bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Получите бесплатную консультацию</h1>
+                <p class="lead mb-4">Расскажите о своем проекте, и мы поможем найти лучшее решение для вашего бизнеса.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="benefit-item mb-3">
+                            <i class="fas fa-clock me-3"></i>
+                            <span>Быстрый ответ в течение часа</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-item mb-3">
+                            <i class="fas fa-shield-alt me-3"></i>
+                            <span>Конфиденциальность данных</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-item mb-3">
+                            <i class="fas fa-handshake me-3"></i>
+                            <span>Персональный менеджер</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-item mb-3">
+                            <i class="fas fa-trophy me-3"></i>
+                            <span>Гарантия качества</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-form bg-white p-4 border">
+                    <h3 class="mb-4">Оставьте заявку</h3>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Описание проекта"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="web-dev-process py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">Как мы работаем</h2>
+            <p class="lead text-muted">Наш проверенный процесс разработки</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step text-center">
+                    <div class="step-number bg-dark text-white mb-3">1</div>
+                    <h5 class="fw-bold mb-3">Анализ</h5>
+                    <p class="text-muted">Изучаем ваши потребности и цели проекта</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step text-center">
+                    <div class="step-number bg-dark text-white mb-3">2</div>
+                    <h5 class="fw-bold mb-3">Дизайн</h5>
+                    <p class="text-muted">Создаем уникальный дизайн и прототип</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step text-center">
+                    <div class="step-number bg-dark text-white mb-3">3</div>
+                    <h5 class="fw-bold mb-3">Разработка</h5>
+                    <p class="text-muted">Программируем функциональность и интеграции</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step text-center">
+                    <div class="step-number bg-dark text-white mb-3">4</div>
+                    <h5 class="fw-bold mb-3">Запуск</h5>
+                    <p class="text-muted">Тестируем, запускаем и обучаем</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="process-benefits bg-light p-4">
+                    <h4 class="fw-bold mb-3">Преимущества нашего подхода</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check me-3"></i>Фиксированные сроки</li>
+                        <li class="mb-2"><i class="fas fa-check me-3"></i>Прозрачное ценообразование</li>
+                        <li class="mb-2"><i class="fas fa-check me-3"></i>Постоянная связь с клиентом</li>
+                        <li class="mb-2"><i class="fas fa-check me-3"></i>Гарантия на все работы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light p-4">
+                    <h4 class="fw-bold mb-3">Технологии</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-1"><strong>Frontend:</strong></p>
+                            <p class="text-muted small">HTML, CSS, JavaScript, React, Vue.js</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1"><strong>Backend:</strong></p>
+                            <p class="text-muted small">PHP, Laravel, Node.js, Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-history py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">Наша история</h2>
+            <p class="lead text-muted">Путь развития компании с момента основания</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker bg-dark"></div>
+                <div class="timeline-content">
+                    <h5 class="fw-bold">2019 - Основание</h5>
+                    <p>Компания была основана командой энтузиастов веб-разработки с целью создания качественных цифровых решений.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker bg-dark"></div>
+                <div class="timeline-content">
+                    <h5 class="fw-bold">2020 - Первые проекты</h5>
+                    <p>Реализация первых крупных проектов для местных предприятий. Формирование основных принципов работы.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker bg-dark"></div>
+                <div class="timeline-content">
+                    <h5 class="fw-bold">2022 - Расширение</h5>
+                    <p>Увеличение команды до 15 человек. Начало работы с крупными федеральными клиентами.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker bg-dark"></div>
+                <div class="timeline-content">
+                    <h5 class="fw-bold">2024 - Сегодня</h5>
+                    <p>Более 200 успешных проектов, команда из 25 профессионалов, офисы в 3 городах.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-multilevel">
+    <div class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Услуги</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#" class="text-dark">Веб-дизайн</a></li>
+                        <li><a href="#" class="text-dark">Разработка</a></li>
+                        <li><a href="#" class="text-dark">SEO оптимизация</a></li>
+                        <li><a href="#" class="text-dark">Поддержка</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Компания</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#" class="text-dark">О нас</a></li>
+                        <li><a href="#" class="text-dark">Команда</a></li>
+                        <li><a href="#" class="text-dark">Вакансии</a></li>
+                        <li><a href="#" class="text-dark">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Поддержка</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#" class="text-dark">База знаний</a></li>
+                        <li><a href="#" class="text-dark">Техподдержка</a></li>
+                        <li><a href="#" class="text-dark">Документация</a></li>
+                        <li><a href="#" class="text-dark">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Статистика</h5>
+                    <div class="company-stats">
+                        <div class="stat-item mb-2">
+                            <strong>200+</strong> проектов
+                        </div>
+                        <div class="stat-item mb-2">
+                            <strong>50+</strong> клиентов
+                        </div>
+                        <div class="stat-item mb-2">
+                            <strong>5</strong> лет опыта
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white">&copy; 2024 Компания. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="footer-legal">
+                        <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                        <a href="#" class="text-white">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="cta-form bg-light text-dark py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h2 class="fw-bold mb-4">Получите персональное предложение</h2>
+                <p class="lead mb-4">Заполните форму, и мы подготовим индивидуальное коммерческое предложение специально для вас</p>
+                <ul class="list-unstyled">
+                    <li class="cta-feature mb-2">
+                        <i class="fas fa-check me-3"></i>Бесплатная консультация
+                    </li>
+                    <li class="cta-feature mb-2">
+                        <i class="fas fa-check me-3"></i>Детальный план проекта
+                    </li>
+                    <li class="cta-feature mb-2">
+                        <i class="fas fa-check me-3"></i>Фиксированная стоимость
+                    </li>
+                    <li class="cta-feature mb-2">
+                        <i class="fas fa-check me-3"></i>Гарантия результата
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="cta-form-container bg-white p-4 border">
+                    <h4 class="fw-bold mb-4">Получить предложение</h4>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option>Тип проекта</option>
+                                <option>Корпоративный сайт</option>
+                                <option>Интернет-магазин</option>
+                                <option>Веб-приложение</option>
+                                <option>Мобильное приложение</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="3" placeholder="Краткое описание проекта"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Получить предложение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

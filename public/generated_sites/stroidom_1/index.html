@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предпросмотр сайта</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+/* Классический бизнес стиль */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --accent-color: #198754;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #0b5ed7);
+    border: none;
+    padding: 12px 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+                
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ваш Логотип</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="hero-section bg-primary text-white py-5 min-vh-50 d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 fw-bold mb-4">Добро пожаловать в будущее</h1>
+        <p class="lead mb-4">Мы создаем инновационные решения для вашего бизнеса. Присоединяйтесь к тысячам довольных клиентов.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="#" class="btn btn-light btn-lg px-4">Начать сейчас</a>
+          <a href="#" class="btn btn-outline-light btn-lg px-4">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4">О нашей компании</h2>
+        <p class="lead text-muted mb-4">Мы - команда профессионалов, которая создает инновационные IT-решения уже более 10 лет.</p>
+        <p class="mb-4">Наша миссия - помогать бизнесу расти и развиваться с помощью современных технологий. Мы специализируемся на разработке веб-приложений, мобильных приложений и системной интеграции.</p>
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="text-center">
+              <h4 class="text-primary fw-bold">500+</h4>
+              <p class="mb-0">Довольных клиентов</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="text-center">
+              <h4 class="text-primary fw-bold">1000+</h4>
+              <p class="mb-0">Реализованных проектов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-image-placeholder bg-light rounded-3 d-flex align-items-center justify-content-center" style="height: 400px;">
+          <i class="fas fa-users fa-4x text-muted"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-info-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center mb-5">
+        <h2 class="fw-bold">Наши контакты</h2>
+        <p class="text-muted">Найдите нас или свяжитесь удобным способом</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="contact-info">
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="bg-primary text-white rounded p-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6>Адрес</h6>
+                  <p class="text-muted mb-0">ул. Примерная, 123<br>г. Москва, 101000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="bg-success text-white rounded p-3">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6>Телефон</h6>
+                  <p class="text-muted mb-0">+7 (495) 123-45-67<br>+7 (800) 123-45-67</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="bg-info text-white rounded p-3">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6>Email</h6>
+                  <p class="text-muted mb-0">info@company.ru<br>support@company.ru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="map-placeholder bg-light rounded d-flex align-items-center justify-content-center" style="height: 300px;">
+          <div class="text-center">
+            <i class="fas fa-map fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Интерактивная карта</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="mb-0">&copy; 2025 Ваша компания. Все права защищены.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <div class="social-links">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<section class="cta-section py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold mb-3">Готовы начать?</h2>
+        <p class="lead mb-4">Свяжитесь с нами сегодня и получите бесплатную консультацию по вашему проекту</p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="btn btn-light btn-lg">Получить консультацию</a>
+          <a href="#" class="btn btn-outline-light btn-lg">Портфолио</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="fw-bold">Что говорят наши клиенты</h2>
+        <p class="text-muted">Отзывы тех, кто уже работал с нами</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="testimonial-card bg-light p-4 rounded h-100">
+          <div class="mb-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+          <p class="mb-3">"Отличная команда профессионалов! Проект был выполнен в срок и превзошел все наши ожидания."</p>
+          <div class="d-flex align-items-center">
+            <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">Анна Петрова</h6>
+              <small class="text-muted">Генеральный директор, ООО "Инновации"</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-card bg-light p-4 rounded h-100">
+          <div class="mb-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+          <p class="mb-3">"Профессиональный подход к решению задач. Рекомендую всем, кто ищет качественные IT-решения."</p>
+          <div class="d-flex align-items-center">
+            <div class="avatar bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">Михаил Сидоров</h6>
+              <small class="text-muted">IT-директор, ЗАО "ТехноСервис"</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-card bg-light p-4 rounded h-100">
+          <div class="mb-3">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+          </div>
+          <p class="mb-3">"Быстро, качественно, с пониманием бизнес-процессов. Будем обращаться снова!"</p>
+          <div class="d-flex align-items-center">
+            <div class="avatar bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h6 class="mb-0">Елена Козлова</h6>
+              <small class="text-muted">Маркетинг-директор, "Ритейл Плюс"</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="portfolio-section py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="fw-bold">Наши проекты</h2>
+        <p class="text-muted">Примеры успешно реализованных решений</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-item bg-white rounded overflow-hidden shadow-sm">
+          <div class="portfolio-image bg-primary d-flex align-items-center justify-content-center" style="height: 250px;">
+            <i class="fas fa-laptop fa-4x text-white"></i>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold mb-2">Интернет-магазин</h5>
+            <p class="text-muted mb-3">Современная платформа электронной коммерции с интеграцией платежных систем</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-primary">E-commerce</span>
+              <a href="#" class="btn btn-outline-primary btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-item bg-white rounded overflow-hidden shadow-sm">
+          <div class="portfolio-image bg-success d-flex align-items-center justify-content-center" style="height: 250px;">
+            <i class="fas fa-mobile-alt fa-4x text-white"></i>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold mb-2">Мобильное приложение</h5>
+            <p class="text-muted mb-3">Кроссплатформенное приложение для управления задачами и проектами</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-success">Mobile App</span>
+              <a href="#" class="btn btn-outline-success btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-item bg-white rounded overflow-hidden shadow-sm">
+          <div class="portfolio-image bg-info d-flex align-items-center justify-content-center" style="height: 250px;">
+            <i class="fas fa-chart-bar fa-4x text-white"></i>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold mb-2">Система аналитики</h5>
+            <p class="text-muted mb-3">Комплексная платформа для анализа данных и создания отчетов</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-info">Analytics</span>
+              <a href="#" class="btn btn-outline-info btn-sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="stats-section py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="stats-icon mb-3">
+            <i class="fas fa-users fa-3x"></i>
+          </div>
+          <h3 class="fw-bold mb-2">500+</h3>
+          <p class="mb-0">Довольных клиентов</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="stats-icon mb-3">
+            <i class="fas fa-project-diagram fa-3x"></i>
+          </div>
+          <h3 class="fw-bold mb-2">1000+</h3>
+          <p class="mb-0">Реализованных проектов</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="stats-icon mb-3">
+            <i class="fas fa-clock fa-3x"></i>
+          </div>
+          <h3 class="fw-bold mb-2">10+</h3>
+          <p class="mb-0">Лет опыта</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="text-center">
+          <div class="stats-icon mb-3">
+            <i class="fas fa-award fa-3x"></i>
+          </div>
+          <h3 class="fw-bold mb-2">50+</h3>
+          <p class="mb-0">Наград и сертификатов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

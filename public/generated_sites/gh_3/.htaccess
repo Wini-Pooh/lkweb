@@ -1,0 +1,19 @@
+# Конфигурация для сайта: gh
+RewriteEngine On
+
+# Безопасность
+Options -Indexes
+<Files config.php>
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Кэширование статических файлов
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+</IfModule>

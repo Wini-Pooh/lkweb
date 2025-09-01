@@ -1,0 +1,595 @@
+/* Сайт: gh */
+/* Создан: 31.08.2025 12:58 */
+
+/* Шаблон: Классический черно-белый */
+
+/* Классический черно-белый стиль */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #666666;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.navbar {
+    background-color: var(--bg-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: white;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card {
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.card:hover {
+    border-color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.bg-light {
+    background-color: var(--light-gray) !important;
+    color: var(--text-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-gray) !important;
+    color: white !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-dark {
+    color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white !important;
+}
+                
+
+/* Блок: Темная навигация (navigation) */
+
+.dark-navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid #fff;
+}
+
+.dark-navbar .navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dark-navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+}
+
+.dark-navbar .nav-link:hover {
+    color: #ccc !important;
+    border-bottom: 2px solid #fff;
+}
+
+.dark-navbar .navbar-toggler {
+    border: 2px solid #fff;
+}
+
+.dark-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Блок: История компании (about) */
+
+.about-history {
+    background-color: #fff;
+}
+
+.about-history h2 {
+    color: #000;
+    font-weight: bold;
+}
+
+.about-history .lead {
+    color: #666;
+}
+
+.about-history .timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.about-history .timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #000;
+}
+
+.about-history .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 30px;
+}
+
+.about-history .timeline-marker {
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000 !important;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #000;
+}
+
+.about-history .timeline-content h5 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about-history .timeline-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Блок: Отзывы-слайдер (testimonials) */
+
+.testimonials-slider {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.testimonials-slider h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.testimonials-slider .lead {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.testimonial-slide {
+    padding: 40px 0;
+}
+
+.quote-icon {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-quote {
+    font-size: 24px;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.testimonial-rating {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+.author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.author-name {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.author-title {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+.carousel-indicators {
+    margin-bottom: -40px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+/* Блок: FAQ с рейтингом (faq) */
+
+.faq-rating {
+    background-color: #f8f9fa;
+}
+
+.faq-rating h2 {
+    color: #212529;
+    font-weight: bold;
+}
+
+.faq-rating .lead {
+    color: #6c757d;
+}
+
+.faq-card {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-2px);
+}
+
+.faq-header {
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.faq-header:hover {
+    background-color: #f8f9fa;
+}
+
+.question-content {
+    flex: 1;
+}
+
+.question-content h5 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: #212529;
+    line-height: 1.4;
+}
+
+.popular-badge {
+    background: #ffc107;
+    color: #212529;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.trending-badge {
+    background: #28a745;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.question-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rating-display {
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rating-display i {
+    margin-right: 3px;
+}
+
+.toggle-icon {
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.faq-header[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    border-top: 1px solid #e9ecef;
+}
+
+.answer-text {
+    padding: 25px;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.answer-text ol,
+.answer-text ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.answer-text li {
+    margin-bottom: 8px;
+}
+
+.answer-rating {
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.answer-rating span {
+    font-weight: 600;
+    color: #495057;
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.rating-buttons .btn {
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.rating-buttons .btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Блок: Прайс-таблица (pricing) */
+
+.pricing-table {
+    background: #fff;
+}
+
+.pricing-table h2 {
+    color: #212529;
+    font-weight: bold;
+}
+
+.pricing-table .lead {
+    color: #6c757d;
+}
+
+.nav-pills .nav-link {
+    border-radius: 25px;
+    padding: 12px 25px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    color: #6c757d;
+    background: transparent;
+    border: 2px solid #e9ecef;
+}
+
+.nav-pills .nav-link.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background: #f8f9fa;
+    color: #007bff;
+}
+
+.pricing-table-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.pricing-table-custom {
+    margin-bottom: 0;
+}
+
+.pricing-table-custom thead th {
+    background: #f8f9fa;
+    color: #212529;
+    font-weight: 700;
+    padding: 20px 15px;
+    border: none;
+    font-size: 16px;
+}
+
+.pricing-table-custom tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.pricing-table-custom tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.pricing-table-custom tbody td {
+    padding: 20px 15px;
+    vertical-align: middle;
+    border-top: 1px solid #e9ecef;
+    color: #495057;
+}
+
+.pricing-table-custom tbody td:first-child {
+    font-weight: 600;
+    color: #212529;
+}
+
+.pricing-table-custom .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.pricing-note {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    border-left: 5px solid #007bff;
+}
+
+.pricing-note h5 {
+    color: #212529;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricing-note h5 i {
+    margin-right: 10px;
+}
+
+.pricing-note ul li {
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .pricing-table-custom {
+        font-size: 14px;
+    }
+    
+    .pricing-table-custom thead th,
+    .pricing-table-custom tbody td {
+        padding: 15px 10px;
+    }
+    
+    .nav-pills .nav-link {
+        padding: 8px 15px;
+        margin: 2px;
+        font-size: 14px;
+    }
+}
+
+/* Блок: Многоуровневый подвал (footer) */
+
+.footer-multilevel .bg-light {
+    background-color: #f8f8f8 !important;
+    border-top: 2px solid #000;
+}
+
+.footer-multilevel h5 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #333 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #000 !important;
+    text-decoration: underline;
+}
+
+.company-stats {
+    color: #333;
+}
+
+.company-stats .stat-item {
+    font-size: 0.95rem;
+}
+
+.company-stats strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-multilevel .bg-dark {
+    background-color: #000 !important;
+}
+
+.footer-legal a {
+    color: #ccc !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+

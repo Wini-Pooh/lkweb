@@ -1,0 +1,232 @@
+/* Сайт: asdsad */
+/* Создан: 29.08.2025 20:18 */
+
+/* Шаблон: Классический черно-белый */
+
+/* Классический черно-белый стиль */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #666666;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.navbar {
+    background-color: var(--bg-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: white;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card {
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+    background-color: white;
+    color: var(--text-color);
+}
+
+.card:hover {
+    border-color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.bg-light {
+    background-color: var(--light-gray) !important;
+    color: var(--text-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-gray) !important;
+    color: white !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-dark {
+    color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: white !important;
+}
+                
+
+/* Блок: Простая навигация (navigation) */
+
+.simple-navbar {
+    border-bottom: 2px solid #000;
+    background-color: #fff !important;
+}
+
+.simple-navbar .navbar-brand {
+    color: #000 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.simple-navbar .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+}
+
+.simple-navbar .nav-link:hover {
+    color: #666 !important;
+    border-bottom: 2px solid #000;
+}
+
+.simple-navbar .navbar-toggler {
+    border: 2px solid #000;
+}
+
+.simple-navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Блок: Минималистичный герой (hero) */
+
+.minimal-hero-section {
+    background-color: #fff !important;
+    color: #000 !important;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.minimal-content h1 {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.minimal-hero-section .lead {
+    color: #666;
+    font-size: 1.25rem;
+}
+
+.minimal-hero-section .btn-dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #000;
+}
+
+.minimal-hero-section .btn-dark:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.stat-item h3 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #666;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Блок: О компании - классический (about) */
+
+.about-classic {
+    background-color: #fff;
+    color: #000;
+}
+
+.about-classic h2 {
+    color: #000;
+    font-weight: bold;
+}
+
+.about-classic .lead {
+    color: #333;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.about-classic p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.about-classic .company-stats h3 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about-classic .company-stats p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-classic .company-stats {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #000;
+}
+
+.about-image {
+    padding: 2rem;
+}
+
